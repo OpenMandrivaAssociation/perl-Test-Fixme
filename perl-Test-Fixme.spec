@@ -1,15 +1,15 @@
 %define upstream_name    Test-Fixme
-%define upstream_version 0.04
+%define upstream_version 0.09
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.09
+Release:	1
 
 Summary:	Check code for FIXMEs
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Test/Test-Fixme-0.09.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -57,4 +57,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Wed Aug 25 2010 Jérôme Quelin <jquelin@mandriva.org> 0.40.0-1mdv2011.0
 + Revision: 573163
 - import perl-Test-Fixme
+
 
