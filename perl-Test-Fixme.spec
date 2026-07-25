@@ -1,15 +1,15 @@
 %define upstream_name    Test-Fixme
-%define upstream_version 0.10
+%define upstream_version 0.17
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Check code for FIXMEs
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/Test-Fixme-%{upstream_version}.tar.gz
+Url:		https://github.com/uperl/Test-Fixme
+Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Test-Fixme-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
