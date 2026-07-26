@@ -1,15 +1,13 @@
 %define upstream_name    Test-Fixme
-%define upstream_version 0.17
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.17
+Release:	2
 
 Summary:	Check code for FIXMEs
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/uperl/Test-Fixme
-Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Test-Fixme-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Test-Fixme-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -31,7 +29,7 @@ is that the coder adds comments like:
  # FIXME - add checking of user priviledges here.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
