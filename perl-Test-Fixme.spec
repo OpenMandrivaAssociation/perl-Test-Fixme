@@ -1,13 +1,14 @@
 %define upstream_name    Test-Fixme
+%define upstream_version 0.17
 Name:		perl-%{upstream_name}
 Version:	0.17
-Release:	2
+Release:	1
 
 Summary:	Check code for FIXMEs
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/uperl/Test-Fixme
-Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Test-Fixme-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Test-Fixme-0.17.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -46,16 +47,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.40.0-2mdv2011.0
-+ Revision: 656825
-- rebuild for updated spec-helper
-
-* Wed Aug 25 2010 Jérôme Quelin <jquelin@mandriva.org> 0.40.0-1mdv2011.0
-+ Revision: 573163
-- import perl-Test-Fixme
-
 
 
