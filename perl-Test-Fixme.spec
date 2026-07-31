@@ -2,7 +2,7 @@
 %define upstream_version 0.17
 Name:		perl-%{upstream_name}
 Version:	0.17
-Release:	11
+Release:	1
 
 Summary:	Check code for FIXMEs
 License:	GPL+ or Artistic
@@ -35,18 +35,18 @@ is that the coder adds comments like:
 %build
 perl Makefile.PL INSTALLDIRS=vendor
 
-%make
-
+%make_build
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install
 %makeinstall_std
 
 %files
-%doc Changes META.yml README
+%doc Changes INSTALL LICENSE META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
