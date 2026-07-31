@@ -2,7 +2,7 @@
 %define upstream_version 0.17
 Name:		perl-%{upstream_name}
 Version:	0.17
-Release:	9
+Release:	10
 
 Summary:	Check code for FIXMEs
 License:	GPL+ or Artistic
